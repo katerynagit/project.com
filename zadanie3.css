@@ -22,7 +22,8 @@ tr:hover td {
 
 a[href="zadanie1.html"],
 a[href="zadanie2.html"],
-a[href="zadanie3.html"] {
+a[href="zadanie3.html"],
+a[href="zadanie4.html"] {
     
     display: block;   
     width: 150px;
@@ -39,7 +40,7 @@ a[href="zadanie3.html"] {
 a[href="index.html"],
 a[href="zadanie31.html"],
 a[href="zadanie32.html"],
-a[href="zadanie33.html"] {
+a[href="zadanie33.html"]{
     
     display: block;   
     width: 250px;
@@ -94,4 +95,36 @@ form {
 label {
   margin-right: 6px; 
 }
-
+.calculator {
+    width: 280px; 
+    margin: 20px auto;
+    border: 1px solid #051b2d; 
+    border-radius: 8px; 
+    overflow: hidden;
+    background-color: #1564a5;
+}
+#display {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    height: 70px;
+    box-sizing: border-box; 
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+.buttons button {
+    height: 70px; 
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+.buttons button.equals {
+   grid-column: span 4; 
+   background-color: #64d264;
+   color: white;
+}
