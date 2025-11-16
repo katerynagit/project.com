@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="faktura.xsl"?>
+
+<FakturaVAT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="faktura.xsd">
+
+    <NumerFaktury>FV/2025/001</NumerFaktury>
+    <DataWystawienia>16.11.2025</DataWystawienia>
+
+    <Sprzedawca>
+        <Nazwa>Firma WebStudio</Nazwa>
+        <Adres>Warszawa, ul. Jagielońska 10, 03-721</Adres>
+    </Sprzedawca>
+
+    <Nabywca>
+        <Imie>Aleksandr</Imie>
+        <Nazwisko>Nowak</Nazwisko>
+         <Adres>Wrocław, ul. Inżynierska 10, 53-227</Adres>
+    </Nabywca>
+
+    <Pozycje>
+        <Pozycja>
+            <Lp>1</Lp>
+            <NazwaUslugi>Projekt strony www.project5.com</NazwaUslugi>
+            <Ilosc>1</Ilosc>
+            <CenaJednostkowa>2500.00</CenaJednostkowa>
+            <Wartosc>2500.00</Wartosc>
+        </Pozycja>
+
+        <Pozycja>
+            <Lp>2</Lp>
+            <NazwaUslugi>Administracja serwerem</NazwaUslugi>
+            <Ilosc>3</Ilosc>
+            <CenaJednostkowa>150.00</CenaJednostkowa>
+            <Wartosc>450.00</Wartosc>
+        </Pozycja>
+
+        <Pozycja>
+            <Lp>3</Lp>
+            <NazwaUslugi>Wsparcie techniczne</NazwaUslugi>
+            <Ilosc>5</Ilosc>
+            <CenaJednostkowa>80.00</CenaJednostkowa>
+            <Wartosc>400.00</Wartosc>
+        </Pozycja>
+    </Pozycje>
+</FakturaVAT>

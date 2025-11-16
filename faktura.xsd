@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified">
+
+    <xs:element name="FakturaVAT">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="NumerFaktury" type="xs:string"/>
+                <xs:element name="DataWystawienia" type="xs:date"/>
+
+                <xs:element name="Sprzedawca">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nazwa" type="xs:string"/>
+                            <xs:element name="Adres" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Nabywca">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Imie" type="xs:string"/>
+                            <xs:element name="Nazwisko" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Pozycje">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Pozycja" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Lp" type="xs:integer"/>
+                                        <xs:element name="NazwaUslugi" type="xs:string"/>
+                                        <xs:element name="Ilosc" type="xs:decimal"/>
+                                        <xs:element name="CenaJednostkowa" type="xs:decimal"/>
+                                        <xs:element name="Wartosc" type="xs:decimal"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
