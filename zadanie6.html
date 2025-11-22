@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zadanie3.css">
+    <title>Formularz</title>
+</head>
+<body>
+
+<div class="form-box">
+    <form action="wynik.php" method="POST">
+
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="birthdate">Data urodzenia:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="adress">Adres zamieszkania:</label>
+        <input type="text" id="adress" name="adress" required><br><br>
+
+        <label for="city">Miasto:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="voivodeship">Województwo:</label>
+        <input type="text" id="voivodeship" name="voivodeship" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="numberphone">Numer telefonu:</label>
+        <input type="tel" id="numberphone" name="numberphone" required><br><br>
+
+        <p>Czy posiadasz prawo jazdy?</p>
+        <label><input type="radio" name="license" value="yes" required> Tak</label><br>
+        <label><input type="radio" name="license" value="no"> Nie</label><br><br>
+
+        <p>Zaznacz płeć:</p>
+        <label><input type="radio" name="sex" value="woman" required> Kobieta</label><br>
+        <label><input type="radio" name="sex" value="man"> Mężczyzna</label><br>
+        <label><input type="radio" name="sex" value="other"> Inna</label><br><br>
+
+        <label for="uwagi">Uwagi:</label><br>
+        <textarea id="uwagi" name="uwagi"></textarea><br><br>
+
+        <button type="reset">Wyczyść</button>
+        <button type="submit">Wyślij</button>
+
+    </form>
+
+    <a href="index.html">Powrót</a>
+</div>
+
+
+</body>
+</html>
